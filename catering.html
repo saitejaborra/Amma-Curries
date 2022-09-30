@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+    <title>Amma Curries</title>
+</head>
+<body>
+<header>
+    <div class="nav-image">
+        <a href="index.html"><img src="Amma Currries.png" alt="Amma Curries logo"></a>
+    </div>
+    
+    <ul class=nav-lists>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="location.html">LOCATION</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+    </ul>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+<body>
+    <main>
+        <div class="contactform">
+            <h1>Contact fot catering order</h1>
+           <form method="post">
+               <label for="fname">Full Name&nbsp;&nbsp;</label>
+               <input type="text" id="fname" name="fname" required/><br><br>
+               <label for="event">Event Name&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" id="event" name="msg"><br><br>
+               <label for="strength">No.of people attending&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" id="strength" name="strength" required/><br><br>
+               <label for="num">Mobile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" id="num" name="num" required/><br><br>
+               <label for="locate">Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" id="locate" name="locate"><br><br>
+               <input  id="sub" type="button" value="Submit" onclick="sendEmail()">
+           </form>
+       </div>
+    </main>
+    <footer>
+        <p>Designed by Borras</p>
+        <p>Phone: 1234456789</p>
+        <p>All rights reserved by Amma Curries.</p>
+        <p>In case of copyrights issue, please contact us.</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="appforcatering.js"></script>
+    <script src="app.js"></script>
+</body>
