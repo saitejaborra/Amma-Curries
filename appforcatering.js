@@ -11,7 +11,7 @@ function sendEmail() {
     Username: "@gmail.com",
     Password: "",
     To: "@gmail.com",
-    From: "s@gmail.com",
+    From: "@gmail.com",
     Subject: subj,
     Body: body,
   })
